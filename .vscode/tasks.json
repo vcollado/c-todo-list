@@ -8,12 +8,19 @@
       "type": "shell",
       "command": "gcc",
       "args": [
-        "main.c", "tasks/task.c", "-o", "main.out", "-g", "-fdiagnostics-color=always"
+        "main.c",
+        "tasks/task.c",
+        "tasks/taskHandler.c",
+        "-o",
+        "main.out",
+        "-g",
+        "-fdiagnostics-color=always"
       ],
       "group": {
         "kind": "build",
         "isDefault": true
-      }
+      },
+      "problemMatcher": []
     }
   ]
 }
