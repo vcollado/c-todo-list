@@ -1,10 +1,9 @@
 #pragma once
-#include <stdbool.h>
 
-typedef struct {
-  char name[50];
-  char description[400];
-  bool completed;
+typedef struct _task {
+  int id;
+  char *name;
+  char *description;
 } Task;
 
-Task NewTask(char name[50], char description[400]);
+Task* NewTask(int id, char *name, char *description);

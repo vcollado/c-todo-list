@@ -8,7 +8,12 @@ TaskHandler NewTaskHandler()
   return taskHandler;
 };
 
-void AddTask(TaskHandler *taskHandler, Task task, int at)
+void AddTask(TaskHandler *taskHandler, Task *task)
 {
-  taskHandler->tasks[at] = task;
+  taskHandler->tasks[task->id] = task;
+}
+
+void RemoveTask(TaskHandler *taskHandler, int id)
+{
+  taskHandler->tasks[id] = 0;
 }

@@ -5,10 +5,10 @@
 
 typedef struct
 {
-  int timestamp;
-  Task tasks[MAX_TASKS];
+  const int timestamp;
+  Task *tasks[MAX_TASKS];
 } TaskHandler;
 
 TaskHandler NewTaskHandler();
-
-void AddTask(TaskHandler *taskHandler, Task task, int at);
+void AddTask(TaskHandler *taskHandler, Task *task);
+void RemoveTask(TaskHandler *taskHandler, int id);
