@@ -16,5 +16,8 @@ int main()
 
   RemoveTask(&taskHandler, task1Id);
 
+  free(task1);
+  free(task2);
+
   return 0;
 }
