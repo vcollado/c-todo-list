@@ -14,7 +14,8 @@
         "-o",
         "main.out",
         "-g",
-        "-fdiagnostics-color=always"
+        "-fdiagnostics-color=always",
+        "-std=c11"
       ],
       "group": {
         "kind": "build",
